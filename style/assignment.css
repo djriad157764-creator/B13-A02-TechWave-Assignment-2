@@ -8,6 +8,8 @@
 }
 header {
   background: rgba(26, 11, 46, 1);
+  max-width: 1600px;
+  
 }
 /* share style */
 .btn{
@@ -34,32 +36,86 @@ nav img{
     max-width: 219px;
     height: 32px;
 }
-.btn i {
-    
-}
-span i {
+.span-humburger span i {
   display: none;
 }
+nav ul{
+    margin-left: 150px;
+}
 nav ul li {
+    list-style: none;
 }
 ul li a {
+    text-decoration: none;
     color: white;
 }
+/* banner style  */
+.banner-container{
 
+    height:760px;
+    background: url(../assets/hero-bg.png);
+    background-size: cover;
+    background-position:center top;
+    background-repeat: no-repeat;
+    margin-top:80px;
+    padding: 50px;
+}
+.image-bg{
+    
+    justify-items: center;
+    margin: 0 auto;
+    
+}
+.banner-image{
+    background: url(../assets/hero-circle.png);
+     background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    
+}
 
+.banner-image img{
+    padding: 100px 90px;
+}
+
+.banner-text h1{
+    font-size: 3.75rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.banner-text p{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.btn-box{
+    gap: 8px;
+    justify-content: center;
+}
+.btn-3{
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+}
 
 @media screen and (max-width:570px) {
-    ul li, .btn{
+    ul li, .btn-hide{
         display: none;
     }
     nav img{
     max-width:100%;
     height:auto;
 }
-.span-humburger span {
+.span-humburger span i {
   display: block;
   color: white;
-  margin-left: 150px;
+}
+.banner-container{
+    width: 100%;
+    height:auto;
 }
 
 }
