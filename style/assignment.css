@@ -25,6 +25,10 @@ header {
     cursor: pointer;
     
 }
+
+/* Why Choose TechWave animate */
+
+
 /* animation button  */
 
 .btn-2 {
@@ -59,12 +63,19 @@ header {
         background-position: 0% 50%;
     }
 }
-
-.btn:hover {
+.card-info:hover,.video-card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background:rgba(255, 255, 255, 0.178);
+}
+.btn:hover,.badge:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
-
+ul li a:hover{
+    color: #00FF88;
+    transition: .5s;
+}
 .display-flex {
   display: flex;
 }
@@ -85,6 +96,7 @@ header {
 
 .logo {
    max-width: 219px;
+   cursor: pointer;
 }
 
 
@@ -154,6 +166,7 @@ header {
     position: absolute;
     top: 35px;
     right: 1px;
+    cursor: pointer;
 }
 
 .banner-text h1{
