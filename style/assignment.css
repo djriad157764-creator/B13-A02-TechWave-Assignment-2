@@ -13,9 +13,6 @@ header {
   margin: 0 auto;
   
 }
-body section{
-   
-}
 /* share style */
 .btn{
     color: aqua;
@@ -219,21 +216,21 @@ ul li a {
 
 
 .card-section{
-    background: rgba(26, 11, 46, 1);
+    background: #230E3D;
     padding:10px;
 }
 .card-section h1{
-    font-size: 3rem;
-    font-weight: 700;
+     font-size: 3rem;
     color: white;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    padding-top: 70px;
 }
 .card-cointainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin:120px 200px;
+    margin:100px 200px;
     align-self: center;
     
 }
@@ -271,6 +268,54 @@ ul li a {
 .Exclusive-Interviews{
     grid-column: span 2;
 }
+/* video section  */
+.video-container-bg{
+    background: #1A0B2E;
+    padding: 120px;
+}
+.video-container-bg h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.video-container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+iframe{
+    border-radius: 24px 24px 0 0;
+    max-width: 380px;
+    height: 214px;
+}
+.video-card{
+    border-radius: 24px;
+    background: rgba(37, 13, 68, 1);
+    max-width: 380px;
+}
+.video-info{
+    padding: 24px;
+}
+.video-info h2{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+.video-info .video-title{
+    font-size: 1rem;
+    color: white;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.video-time img{
+    max-width:20px ;
+    height:20px ;
+}
+
 @media screen and (max-width:576px) {
 
     /* header section  */
@@ -371,5 +416,28 @@ ul li a {
 .card-section h1{
     font-size: 2.1rem;
     margin: 40px 0;
+}
+/* .video-container */
+.video-container-bg{
+    padding: 10px;
+}
+.video-container-bg h1{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.video-container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.video-card, iframe{
+    max-width: 100%;
+}
+.video-info h2{
+    font-size: 1.1rem;
+}
+.video-info .video-title{
+    font-size: 14px;
 }
 }
