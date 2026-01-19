@@ -9,6 +9,7 @@
 header {
   background: rgba(26, 11, 46, 1);
   max-width: 1600px;
+  margin: 0 auto;
   
 }
 /* share style */
@@ -19,6 +20,7 @@ header {
     font-size: 1rem;
     padding: 12px 16px;
     border-radius: 24px;
+    margin-bottom: 101px;
 }
 .display-flex {
   display: flex;
@@ -27,7 +29,7 @@ header {
 /* navbar style  */
 nav {
   max-width: 1200px;
-  align-items: center;
+  align-items center;
   margin: 0 auto;
   justify-content: space-between;
   padding: 30px 0;
@@ -51,14 +53,13 @@ ul li a {
 }
 /* banner style  */
 .banner-container{
-
     height:760px;
     background: url(../assets/hero-bg.png);
-    background-size: cover;
+    background-size:auto;
     background-position:center top;
     background-repeat: no-repeat;
     margin-top:80px;
-    padding: 50px;
+    padding-top: 120px;
 }
 .image-bg{
     
@@ -71,11 +72,23 @@ ul li a {
      background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
+    position: relative;
     
 }
 
 .banner-image img{
-    padding: 100px 90px;
+    
+    padding: 80px 75px;
+}
+.nw{
+    font-size: 18px;
+    background: #00FF88;
+    padding: 8px 16px;
+    border-radius: 100px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    position: absolute;
+    top: 35px;
+    right: 1px;
 }
 
 .banner-text h1{
@@ -102,6 +115,9 @@ ul li a {
 }
 
 @media screen and (max-width:570px) {
+
+    /* header section  */
+
     ul li, .btn-hide{
         display: none;
     }
@@ -113,9 +129,33 @@ ul li a {
   display: block;
   color: white;
 }
+
 .banner-container{
     width: 100%;
     height:auto;
+    background-size: contain;
+    margin-top:130px;
+    padding: 1px;
+    
+}
+.banner-image{
+    background: url(../assets/hero-circle.png);
+     background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    
+}
+.nw{
+    top: -10px;
+    right:-5px ;
+}
+.banner-image img{
+    max-width: 150px;
+    height: auto;
+    padding: 40px 55px;
+}
+.banner-text h1{
+    font-size: 2.75rem;
 }
 
 }
