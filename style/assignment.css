@@ -66,12 +66,14 @@ ul li a {
     background-position:center top;
     background-repeat: no-repeat;
     margin-top:80px;
+   
     padding-top: 120px;
 }
 .image-bg{
     
     justify-items: center;
     margin: 0 auto;
+    padding-bottom: 20px;
     
 }
 .banner-image{
@@ -129,6 +131,7 @@ ul li a {
     justify-items: center;
     justify-content: center;
     padding-bottom: 120px;
+    margin-top: 40px;
 }
 
 .rating-section{
@@ -151,12 +154,8 @@ ul li a {
     font-size: 1rem;
     color: rgb(255, 255, 255);
     line-height: 20px;
-
-}
-hr{
-    color: rgba(255, 255, 255, 0.274);
-    max-width: 1200px;
-    margin: 80px auto;
+    border-bottom:  1px solid #ffffff4d;
+    padding: 40px;
 }
 .rating-card{
     max-width: 240px;
@@ -191,7 +190,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin 120px 200px;
+    margin:120px 200px;
     align-self: center;
     
 }
@@ -229,7 +228,7 @@ hr{
 .Exclusive-Interviews{
     grid-column: span 2;
 }
-@media screen and (max-width:570px) {
+@media screen and (max-width:576px) {
 
     /* header section  */
 
@@ -276,7 +275,7 @@ hr{
 .rating{
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
-    padding:20px;
+    padding: 0 20px;
 }
 .podcast h1{
     font-size: 2rem;
@@ -285,20 +284,18 @@ hr{
     font-size: 14px;
     line-height: 25px;
 }
-hr{
-    width: 95%;
-    margin: 40px auto;
-}
+
 .rating-card{
     max-width:100%;
 }
 .rating-card h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 /* card-section */
 
-.card-section{
-   
+.card-section .Choose{
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
 .card-cointainer{
     grid-template-columns: 1fr;
