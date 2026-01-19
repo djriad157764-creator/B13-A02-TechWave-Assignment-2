@@ -23,8 +23,51 @@ body section{
     background: linear-gradient(35.55deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     font-size: 1rem;
     padding: 12px 16px;
-    border-radius: 24px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
 }
+/* animation button  */
+
+.btn-2 {
+    
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(50deg,
+        rgba(247, 233, 63, 1),
+        rgb(251, 25, 9),
+        rgba(145, 0, 248, 1),
+        rgb(72, 218, 96),
+        #ffffff3f,
+        orange);
+    background-size: 400% 400%;
+    animation: liquidFlow 8s ease-in-out infinite;
+}
+
+@keyframes liquidFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 .display-flex {
   display: flex;
 }
