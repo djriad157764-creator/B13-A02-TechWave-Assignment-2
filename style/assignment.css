@@ -7,9 +7,9 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
 header {
   background: rgba(26, 11, 46, 1);
-  max-width: 1600px;
   margin: 0 auto;
   
 }
@@ -73,37 +73,53 @@ header {
     display: none;
 }
 
-/* navbar style  */
-nav {
-  max-width: 1200px;
-  align-items: center;
-  margin: 0 auto;
-  justify-content: space-between;
-  padding: 30px 0;
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #0f041c; 
+    position: relative;
 }
-nav img{
-    max-width: 219px;
-    height: 32px;
+
+.logo {
+   max-width: 219px;
 }
-.span-humburger span i {
-  display: none;
-}
-nav ul{
-    margin-left: 150px;
-}
-nav ul li {
+
+
+.nav-link {
+    display: flex;
     list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%); 
 }
-ul li a {
+.nav-link li {
+    margin: 0 20px;
+}
+
+.nav-link li a {
+    font-size: 1rem;
     text-decoration: none;
     color: white;
 }
+
+
+
+.hamburger-menu {
+    display: none;
+}
+
+
+
+
 /* banner style  */
 .banner-container{
     height:760px;
     background: url(../assets/hero-bg.png);
-    background-size:auto;
-    background-position:center top;
+    background-size:100%;
+    background-position:center;
     background-repeat: no-repeat;
     margin-top:80px;
    
@@ -129,7 +145,7 @@ ul li a {
     
     padding: 80px 75px;
 }
-.nw{
+.badge{
     font-size: 18px;
     background: #00FF88;
     padding: 8px 16px;
@@ -166,7 +182,7 @@ ul li a {
 /* rating-section */
 .rating{
     display: grid;
-    grid-template-columns: repeat(4,240px);
+    grid-template-columns: repeat(4,1fr);
     gap: 80px;
     justify-items: center;
     justify-content: center;
@@ -175,6 +191,7 @@ ul li a {
 }
 
 .rating-section{
+    margin: 0 auto;
     background: rgba(26, 11, 46, 1);
     padding-top:4px;
 }
@@ -194,8 +211,10 @@ ul li a {
     font-size: 1rem;
     color: rgb(255, 255, 255);
     line-height: 20px;
-    border-bottom:  1px solid #ffffff4d;
     padding: 40px;
+}
+hr{
+    color: rgba(255, 255, 255, 0.24);
 }
 .rating-card{
     max-width: 240px;
@@ -272,6 +291,7 @@ ul li a {
 .video-container-bg{
     background: #1A0B2E;
     padding: 120px;
+  
 }
 .video-container-bg h1{
     font-size: 3rem;
@@ -282,19 +302,21 @@ ul li a {
 }
 .video-container{
     max-width: 1200px;
+    margin:0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
 iframe{
     border-radius: 24px 24px 0 0;
-    max-width: 380px;
-    height: 214px;
+    max-width: 100%;
+    height:210px;
 }
 .video-card{
     border-radius: 24px;
     background: rgba(37, 13, 68, 1);
     max-width: 380px;
+    min-height:auto;
 }
 .video-info{
     padding: 24px;
@@ -319,19 +341,24 @@ iframe{
 @media screen and (max-width:576px) {
 
     /* header section  */
-
-    ul li, .btn-hide{
-        display: none;
-    }
-    nav img{
-    max-width:100%;
-    height:auto;
+    .navbar {
+    padding: 15px 20px;
+   
 }
-.span-humburger span i {
-  display: block;
-  color: white;
+.nav-link, .btn-primary{
+    display: none;
 }
-
+.logo {
+   max-width: 137px;
+}
+.hamburger-menu{
+    display: block;
+}
+.btn-2, .btn-3{
+    padding: 10px 10px;
+    font-size: 14px;
+    letter-spacing: 0;
+}
 .banner-container{
     width: 100%;
     height:auto;
@@ -343,7 +370,7 @@ iframe{
 .banner-image{
     background-size:contain;
 }
-.nw{
+.badge{
     top: -10px;
     right:-5px ;
 }
@@ -358,7 +385,7 @@ iframe{
 /* rating-section */
 
 .podcast{
-    max-width: 95%;
+    max-width: 100%;
 }
 .rating{
     grid-template-columns: repeat(2,1fr);
@@ -425,6 +452,11 @@ iframe{
     font-size: 2rem;
     margin-bottom: 40px;
 }
+.rating{
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
 .video-container{
     max-width: 100%;
     display: grid;
@@ -439,5 +471,31 @@ iframe{
 }
 .video-info .video-title{
     font-size: 14px;
+}
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+  
+    .video-container{
+    max-width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.card-cointainer{
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin:5px;
+}
+    .video-card, iframe{
+    max-width: 100%;
+}
+.rating{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+    margin-top: 40px;
 }
 }
