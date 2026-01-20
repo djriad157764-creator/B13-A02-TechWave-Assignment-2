@@ -29,7 +29,7 @@ header {
   cursor: pointer;
 }
 
-/* Why Choose TechWave animate */
+
 
 /* animation button  */
 
@@ -73,12 +73,12 @@ header {
   background: rgba(255, 255, 255, 0.178);
 }
 .btn:hover,
-.badge:hover,.logo:hover
-{
+.badge:hover,
+.logo:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
-.challenge-png:hover{
+.challenge-png:hover {
   cursor: pointer;
   transform: scale(1.3);
   transition: 0.3s;
@@ -92,9 +92,6 @@ ul li a:hover {
   display: flex;
 }
 
-.hide {
-  display: none;
-}
 
 .navbar {
   display: flex;
@@ -136,7 +133,7 @@ ul li a:hover {
 .banner-container {
   height: 760px;
   background: url(../assets/hero-bg.png);
-  background-size: 100%;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 80px;
@@ -355,49 +352,95 @@ iframe {
 
 /* challenge-part */
 
-.challenge-part{
-  padding:120px 200px;
-  background: #1A0B2E;
+.challenge-part {
+  padding: 120px 200px;
+  background: #1a0b2e;
 }
-.challenge-section{
+.challenge-section {
   padding: 40px;
   border-radius: 40px;
   background: rgba(53, 17, 101, 0.4);
   max-width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
 }
-.challenge-section .challenge-part-img{
+.challenge-section .challenge-part-img {
   max-width: 200px;
   height: 200px;
 }
-.challenge-section-info h2{
-   font-size: 2rem;
-   font-weight: 700;
-   color: white;
-   margin-bottom: 16px;
+.challenge-section-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
 }
-.challenge-section-info p{
+.challenge-section-info p {
   font-size: 1rem;
   color: white;
   margin-bottom: 16px;
   line-height: 24px;
 }
-.challenge-png{
+.challenge-png {
   padding: 12px;
   border: 1px solid rgba(83, 60, 114, 1);
   border-radius: 50%;
 }
 
-.challenge-png img{
+.challenge-png img {
   max-width: 20px;
   min-height: 20px;
 }
-.x-png{
+.x-png {
   max-width: 16px;
   height: 16px;
 }
-@media screen and (max-width: 576px) {
 
+/* footer section */
+
+footer {
+  background: #230e3d;
+  
+}
+.end-section {
+   background: url(../assets/footer-bg.png);
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+ 
+.footer-section {
+   padding:120px;
+}
+.footer-section .footer-image {
+  max-width: 410px;
+  justify-self: center;
+  margin-bottom: 32px;
+}
+.footer-png {
+  display: grid;
+  grid-template-columns: repeat(4, 99px);
+  gap:10px;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 32px;
+}
+.png-item-box{
+  display: flex;
+  gap: 8px;
+}
+.footer-png h4{
+  color: white;
+  cursor: pointer;
+}
+.footer-png img {
+  max-width: 25px;
+  height: 24px;
+  cursor: pointer;
+}
+small {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
   /* header section  */
 
   .navbar {
@@ -426,11 +469,8 @@ iframe {
     width: 100%;
     height: auto;
     background-size: contain;
-    margin-top: 130px;
-    padding: 1px;
-  }
-  .banner-image {
-    background-size: contain;
+    background-position: top;
+    padding-top:  5px;
   }
   .badge {
     top: -10px;
@@ -533,7 +573,7 @@ iframe {
   iframe {
     max-width: 100%;
   }
-  
+
   .video-info h2 {
     font-size: 1.1rem;
   }
@@ -541,29 +581,44 @@ iframe {
     font-size: 14px;
   }
 
-/* challenge-part */
+  /* challenge-part */
 
-  .challenge-section{
+  .challenge-section {
     flex-direction: column;
   }
-  .challenge-section{
-  padding: 20px;
-  max-width:100%;
-}
+  .challenge-section {
+    padding: 20px;
+    max-width: 100%;
+  }
   .challenge-part {
     padding: 20px 10px;
-    background: #1A0B2E;
+    background: #1a0b2e;
+  }
+  .challenge-section .challenge-part-img {
+    max-width: 150px;
+    height: 150px;
+  }
+  .challenge-section-info h2,
+  .challenge-section-info p,
+  .png-box {
+    text-align: center;
+  }
+  .png-box {
+    justify-content: center;
+  }
+
+  /* .footer-section */
+  .footer-png {
+  grid-template-columns: repeat(2,85px);
 }
-.challenge-section .challenge-part-img{
-  max-width: 150px;
-  height: 150px;
+footer {
+  max-width:100%;
 }
-.challenge-section-info h2,
-.challenge-section-info p, .png-box{
-  text-align: center;
+.footer-section .footer-image {
+  max-width: 219px;;
 }
-.png-box{
-  justify-content: center;
+.footer-section{
+  padding: 40px 20px;
 }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -605,11 +660,8 @@ iframe {
   }
   /* challenge-part */
 
-  .challenge-section{
-    flex-direction: column;
+  .challenge-section {
+  flex-direction: column;
   }
-  .challenge-part {
-    padding: 20px;
-  }
-
+  
 }
